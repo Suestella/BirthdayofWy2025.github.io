@@ -10,6 +10,25 @@
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* 定义文字特效的样式和动画 */
+        .text-effect {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #ff6600;
+            /* 文字颜色可自行修改 */
+            font-weight: bold;
+        }
+
+        .text-effect.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
 
     <title>生日祝福页面</title>
 </head>
@@ -53,7 +72,8 @@
                 <div class="home__data">
                     <h1 class="home__title">为生日送上一份礼物</h1>
                     <p class="home__description">在这个特别的日子里，给你心爱的人送上一份礼物，一起分享生日的喜悦吧。</p>
-                    <a href="#" class="button">开始挑选</a>
+                    <a href="#" class="button" onclick="showTextEffect('即将开始挑选礼物啦，愿你的心意能带来满满的幸福哦！')">开始挑选</a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
             </div>
         </section>
@@ -64,7 +84,8 @@
                 <div class="share__data">
                     <h2 class="section-title-center">分享是你能给予的最好礼物<br> </h2>
                     <p class="share__description">在生日这个美好的时刻，分享就是最好的礼物。给你最爱的人送上一份心意，带着满满的幸福一起庆祝吧。</p>
-                    <a href="#" class="button">送出礼物</a>
+                    <a href="#" class="button" onclick="showTextEffect('分享的快乐会让这个生日更加难忘呀，快送出你的心意吧！')">送出礼物</a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
 
                 <div class="share__img">
@@ -80,19 +101,23 @@
                 <div class="decorations__data">
                     <img src="assets/img/decoration1.png" alt="" class="decorations__img">
                     <h3 class="decorations__title">生日气球</h3>
-                    <a href="#" class="button button-link">去选购</a>
+                    <a href="#" class="button button-link" onclick="showTextEffect('这些漂亮的气球会让生日派对氛围超棒呢，快去选购呀！')">去选购</a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
 
                 <div class="decorations__data">
                     <img src="assets/img/decoration2.png" alt="" class="decorations__img">
                     <h3 class="decorations__title">生日蜡烛</h3>
-                    <a href="#" class="button button-link">去选购</a>
+                    <a href="#" class="button button-link" onclick="showTextEffect('生日蜡烛点亮的那一刻，温馨感满满哦，赶紧去选购吧！')">去选购</a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
 
                 <div class="decorations__data">
                     <img src="assets/img/decoration3.png" alt="" class="decorations__img">
                     <h3 class="decorations__title">生日横幅</h3>
-                    <a href="#" class="button button-link">去选购</a>
+                    <a href="#" class="button button-link"
+                        onclick="showTextEffect('个性的生日横幅会让生日更有仪式感哦，别犹豫啦，去选购呀！')">去选购</a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
             </div>
         </section>
@@ -107,7 +132,9 @@
                     <h3 class="gifts__title">蛋糕装饰摆件</h3>
                     <span class="gifts__category">礼物</span>
                     <span class="gifts__preci">9.45元</span>
-                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                    <a href="#" class="button gifts__button"
+                        onclick="showTextEffect('这个蛋糕装饰摆件很精致哦，相信会是个不错的选择呢，喜欢就加入心愿单呀！')"><i class='bx bx-heart'></i></a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
 
                 <div class="gifts__content">
@@ -115,7 +142,9 @@
                     <h3 class="gifts__title">纪念相册</h3>
                     <span class="gifts__category">礼物</span>
                     <span class="gifts__preci">2.52元</span>
-                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                    <a href="#" class="button gifts__button" onclick="showTextEffect('用纪念相册记录美好瞬间，很有意义呢，考虑入手一份呀！')"><i
+                            class='bx bx-heart'></i></a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
 
                 <div class="gifts__content">
@@ -123,7 +152,9 @@
                     <h3 class="gifts__title">定制马克杯</h3>
                     <span class="gifts__category">礼物</span>
                     <span class="gifts__preci">13.15元</span>
-                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                    <a href="#" class="button gifts__button"
+                        onclick="showTextEffect('定制马克杯独一无二，很适合作为生日礼品哦，心动就赶紧行动呀！')"><i class='bx bx-heart'></i></a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
 
                 <div class="gifts__content">
@@ -131,7 +162,9 @@
                     <h3 class="gifts__title">香薰蜡烛</h3>
                     <span class="gifts__category">礼物</span>
                     <span class="gifts__preci">4.25元</span>
-                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                    <a href="#" class="button gifts__button"
+                        onclick="showTextEffect('香薰蜡烛能营造温馨氛围，作为礼物很不错哟，喜欢就别错过呀！')"><i class='bx bx-heart'></i></a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
 
                 <div class="gifts__content">
@@ -139,7 +172,9 @@
                     <h3 class="gifts__title">首饰盒</h3>
                     <span class="gifts__category">礼物</span>
                     <span class="gifts__preci">7.99元</span>
-                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                    <a href="#" class="button gifts__button" onclick="showTextEffect('精美的首饰盒很实用哦，送给对方会很贴心呢，考虑一下呀！')"><i
+                            class='bx bx-heart'></i></a>
+                    <div class="text-effect">这里显示特效文字</div>
                 </div>
             </div>
         </section>
@@ -153,7 +188,8 @@
                     <form action="">
                         <div class="send__direction">
                             <input type="text" placeholder="收件人地址" class="send__input">
-                            <a href="#" class="button">发送</a>
+                            <a href="#" class="button" onclick="showTextEffect('礼物即将送出啦，希望对方会喜欢这份心意哦！')">发送</a>
+                            <div class="text-effect">这里显示特效文字</div>
                         </div>
                     </form>
                 </div>
@@ -194,10 +230,10 @@
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">社交平台</h3>
-                <a href="#" class="footer__social"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                <h3 class="footer__title">社交平台</a>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
             </div>
         </div>
 
@@ -209,6 +245,21 @@
 
     <!--========== 主脚本 ==========-->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        function showTextEffect(message) {
+            // 获取对应的文字特效元素
+            var textEffectElement = document.querySelector('.text-effect');
+            // 设置文字内容
+            textEffectElement.textContent = message;
+            // 添加show类名触发动画效果
+            textEffectElement.classList.add('show');
+            // 一段时间后移除show类名，以便下次点击可以重新触发动画
+            setTimeout(() => {
+                textEffectElement.classList.remove('show');
+            }, 2000); // 这里2000毫秒（2秒）可根据需要调整显示时长
+        }
+    </script>
 </body>
 
 </html>
