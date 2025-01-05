@@ -1,8 +1,214 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.cn/design/DAGbOQKZ21A/FIaRO-xLVjXfEa-zWyOAWQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.cn&#x2F;design&#x2F;DAGbOQKZ21A&#x2F;FIaRO-xLVjXfEa-zWyOAWQ&#x2F;view?utm_content=DAGbOQKZ21A&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">W&amp;Y</a>，作者 Equation
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>生日祝福页面</title>
+</head>
+
+<body>
+    <!--========== 回到顶部按钮 ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+    <!--========== 头部 ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">生日礼品</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">首页</a></li>
+                    <li class="nav__item"><a href="#share" class="nav__link">分享</a></li>
+                    <li class="nav__item"><a href="#decorations" class="nav__link">装饰</a></li>
+                    <li class="nav__item"><a href="#gifts" class="nav__link">礼物</a></li>
+
+                    <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== 首页 ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__img">
+                    <img src="assets/img/home.png" alt="">
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">为生日送上一份礼物</h1>
+                    <p class="home__description">在这个特别的日子里，给你心爱的人送上一份礼物，一起分享生日的喜悦吧。</p>
+                    <a href="#" class="button">开始挑选</a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== 分享 ==========-->
+        <section class="share section bd-container" id="share">
+            <div class="share__container bd-grid">
+                <div class="share__data">
+                    <h2 class="section-title-center">分享是你能给予的最好礼物<br> </h2>
+                    <p class="share__description">在生日这个美好的时刻，分享就是最好的礼物。给你最爱的人送上一份心意，带着满满的幸福一起庆祝吧。</p>
+                    <a href="#" class="button">送出礼物</a>
+                </div>
+
+                <div class="share__img">
+                    <img src="assets/img/shared.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--========== 装饰 ==========-->
+        <section class="decorations section bd-container" id="decorations">
+            <h2 class="section-title">为生日派对准备装饰</h2>
+            <div class="decorations__container bd-grid">
+                <div class="decorations__data">
+                    <img src="assets/img/decoration1.png" alt="" class="decorations__img">
+                    <h3 class="decorations__title">生日气球</h3>
+                    <a href="#" class="button button-link">去选购</a>
+                </div>
+
+                <div class="decorations__data">
+                    <img src="assets/img/decoration2.png" alt="" class="decorations__img">
+                    <h3 class="decorations__title">生日蜡烛</h3>
+                    <a href="#" class="button button-link">去选购</a>
+                </div>
+
+                <div class="decorations__data">
+                    <img src="assets/img/decoration3.png" alt="" class="decorations__img">
+                    <h3 class="decorations__title">生日横幅</h3>
+                    <a href="#" class="button button-link">去选购</a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== 礼物 ==========-->
+        <section class="gifts section bd-container" id="gifts">
+            <h2 class="section-title">生日<br>礼物推荐</h2>
+
+            <div class="gifts__container bd-grid">
+                <div class="gifts__content">
+                    <img src="assets/img/accessory1.png" alt="" class="gifts__img">
+                    <h3 class="gifts__title">蛋糕装饰摆件</h3>
+                    <span class="gifts__category">礼物</span>
+                    <span class="gifts__preci">9.45元</span>
+                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="gifts__content">
+                    <img src="assets/img/accessory2.png" alt="" class="gifts__img">
+                    <h3 class="gifts__title">纪念相册</h3>
+                    <span class="gifts__category">礼物</span>
+                    <span class="gifts__preci">2.52元</span>
+                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="gifts__content">
+                    <img src="assets/img/accessory3.png" alt="" class="gifts__img">
+                    <h3 class="gifts__title">定制马克杯</h3>
+                    <span class="gifts__category">礼物</span>
+                    <span class="gifts__preci">13.15元</span>
+                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="gifts__content">
+                    <img src="assets/img/accessory4.png" alt="" class="gifts__img">
+                    <h3 class="gifts__title">香薰蜡烛</h3>
+                    <span class="gifts__category">礼物</span>
+                    <span class="gifts__preci">4.25元</span>
+                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="gifts__content">
+                    <img src="assets/img/accessory5.png" alt="" class="gifts__img">
+                    <h3 class="gifts__title">首饰盒</h3>
+                    <span class="gifts__category">礼物</span>
+                    <span class="gifts__preci">7.99元</span>
+                    <a href="#" class="button gifts__button"><i class='bx bx-heart'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== 送出礼物 ==========-->
+        <section class="send section">
+            <div class="send__container bd-container bd-grid">
+                <div class="send__content">
+                    <h2 class="section-title-center send__title">立即送出礼物</h2>
+                    <p class="send__description">在生日庆祝开始前就送出你的心意吧。填写收件人的地址哦。</p>
+                    <form action="">
+                        <div class="send__direction">
+                            <input type="text" placeholder="收件人地址" class="send__input">
+                            <a href="#" class="button">发送</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="send__img">
+                    <img src="assets/img/send.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== 底部 ==========-->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <a href="#" class="footer__logo">生日礼品</a>
+                </h3>
+                <p class="footer__description">我送出一份礼物，传递<br>快乐</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">我们的服务</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">价格</a></li>
+                    <li><a href="#" class="footer__link">优惠</a></li>
+                    <li><a href="#" class="footer__link">配送方式</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">我们的公司</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">博客</a></li>
+                    <li><a href="#" class="footer__link">关于我们</a></li>
+                    <li><a href="#" class="footer__link">我们的使命</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">社交平台</h3>
+                <a href="#" class="footer__social"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">© 2021 Bedimcode. 版权所有</p>
+    </footer>
+
+    <!--========== 滚动显示动画 ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== 主脚本 ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
